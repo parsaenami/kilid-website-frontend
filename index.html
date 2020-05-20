@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+  <meta charset="UTF-8"/>
+  <title>سامانه خرید و فروش - رهن و اجاره مسکن | کیلید</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./src/style/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Material+Icons">
+  <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD90bNQY4J8bG6mh4daT0AznQeTqKJN2ws&callback=initMap">
+  </script>
+</head>
+<body>
+<header class="flex-col">
+  <div
+    style="border-bottom: 1px solid #e5e5e5;"
+    class="flex-row header-wrapper al-center jus-between"
+  >
+    <div class="al-center flex-row">
+      <div>
+        <a href="/">
+          <img
+            class="logooo"
+            src="./src/assets/Kilid-eng-logo.png"
+            alt="logo"
+          />
+        </a>
+      </div>
+      <div class="nav-items flex-row jus-start al-center">
+        <ul class="flex-row jus-start al-center">
+          <li class="li-row">
+            <a href="#/occasion">
+              خرید
+            </a>
+          </li>
+          <li class="li-row">رهن و اجاره</li>
+          <li class="li-row">جستجو روی نقشه</li>
+          <li class="li-row">ثبت رایگان آگهی</li>
+          <li class="li-row">قیمت خانه‌ی شما</li>
+          <li class="li-row">اطلاعات بازار مسکن</li>
+          <li class="li-row">آژانس‌های املاک</li>
+          <li class="li-row">سامانه‌ی مشاورین</li>
+        </ul>
+      </div>
+    </div>
+    <div class="al-center submit-wrapper jus-center flex-row">
+      <a href="#/auth">
+        <div class="submit-button flex-row al-center jus-center">
+          <span>ورود / ثبت نام</span>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div id="app"></div>
+</header>
+<script src="/dist/build.js"></script>
+<footer class="flex-col">
+  <div class="footer-social social-grid-container jus-center">
+    <div class="social-grid-item flex-row jus-center al-center">
+      <img src="./src/assets/tele.PNG" alt="s1"/>
+    </div>
+    <div class="social-grid-item flex-row jus-center al-center">
+      <img src="./src/assets/insta.PNG" alt="s2"/>
+    </div>
+    <div class="social-grid-item flex-row jus-center al-center">
+      <img src="./src/assets/twitter.PNG" alt="s3"/>
+    </div>
+    <div class="social-grid-item flex-row jus-center al-center">
+      <img src="./src/assets/linkedin.PNG" alt="s4"/>
+    </div>
+  </div>
+  <div class="footer-nav jus-center al-center">
+    <ul class="footer-nav-1 flex-row jus-center al-center">
+      <li class="footer-li-row">خرید</li>
+      <li class="footer-li-row">رهن و اجاره</li>
+      <li class="footer-li-row">جستجو روی نقشه</li>
+      <li class="footer-li-row">ثبت رایگان آگهی</li>
+      <li class="footer-li-row">قیمت خانه‌ی شما</li>
+      <li class="footer-li-row">اطلاعات بازار مسکن</li>
+      <li class="footer-li-row">آژانس‌های املاک</li>
+      <li class="footer-li-row">سامانه‌ی مشاورین</li>
+    </ul>
+    <div class="footer-social logo-grid-container jus-center">
+      <div class="logo-grid-item">
+        <img src="./src/assets/logo.png" alt=""/>
+      </div>
+      <div class="logo-grid-item">
+        <img src="./src/assets/eanjoman.jpg" alt=""/>
+      </div>
+      <div class="logo-grid-item">
+        <img src="./src/assets/enamad.png" alt=""/>
+      </div>
+      <div class="logo-grid-item">
+        <img src="./src/assets/ecunion-logo.png" alt=""/>
+      </div>
+    </div>
+    <ul
+      class="footer-nav-1 flex-row jus-center al-center"
+      style="margin-top: 10px"
+    >
+      <li class="footer-li-row-2">درباره‌ی کیلید</li>
+      <li class="footer-li-row-2">تماس با ما</li>
+      <li class="footer-li-row-2">کیلید مگ</li>
+      <li class="footer-li-row-2">اپلیکیشن موبایل</li>
+      <li class="footer-li-row-2">نقشه‌ی سایت</li>
+      <li class="footer-li-row-2">پروژه‌ها</li>
+    </ul>
+    <div class="jus-center flex-row">
+      <img
+        src="./src/assets/Capture2.PNG"
+        alt="logo2"
+        style="width: 180px; cursor: pointer;"
+      />
+    </div>
+    <span class="flex-row jus-center address">
+          تهران، خیابان وزرا، کوچه نهم، پلاک ۲۶
+        </span>
+    <span class="flex-row jus-center address tel">
+          ۰۲۱-۷۵۰۷۱۰۰۰
+        </span>
+  </div>
+  <div class="footer-places flex-row jus-center al-center">
+    <div class="place-grid-container">
+      <div class="place-grid-item">خرید</div>
+      <div class="place-grid-item">تهرانپارس</div>
+      <div class="place-grid-item">پاسداران</div>
+      <div class="place-grid-item"></div>
+      <div class="place-grid-item">پونک</div>
+      <div class="place-grid-item">شهرک غرب</div>
+      <div class="place-grid-item"></div>
+      <div class="place-grid-item">بلوار فردوس</div>
+      <div class="place-grid-item">ستارخان</div>
+      <div class="place-grid-item"></div>
+      <div class="place-grid-item">سعادت‌آباد</div>
+      <div class="place-grid-item">ونک</div>
+      <div class="place-grid-item"></div>
+      <div class="place-grid-item">نواب</div>
+      <div class="place-grid-item">مرزداران</div>
+    </div>
+    <div class="place-grid-container">
+      <div class="place-grid-item">اجاره</div>
+      <div class="place-grid-item">تهرانپارس</div>
+      <div class="place-grid-item">پاسداران</div>
+      <div class="place-grid-item"></div>
+      <div class="place-grid-item">پونک</div>
+      <div class="place-grid-item">شهرک غرب</div>
+      <div class="place-grid-item"></div>
+      <div class="place-grid-item">بلوار فردوس</div>
+      <div class="place-grid-item">ستارخان</div>
+      <div class="place-grid-item"></div>
+      <div class="place-grid-item">سعادت‌آباد</div>
+      <div class="place-grid-item">ونک</div>
+      <div class="place-grid-item"></div>
+      <div class="place-grid-item">نواب</div>
+      <div class="place-grid-item">مرزداران</div>
+    </div>
+  </div>
+  <div class="footer-terms flex-row jus-center">
+    <div class="term">
+      کلیه حقوق این سایت متعلق به شرکت کلان داده شهر فناوران می‌باشد
+    </div>
+    <div class="term">حریم خصوصی</div>
+    <div class="term">شرایط استفاده</div>
+  </div>
+</footer>
+</body>
+</html>
